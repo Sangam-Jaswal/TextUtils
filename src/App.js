@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import Alert from './components/Alert';
 import About from './components/About';
-import { useFormState } from 'react-dom';
+
 
 import React from "react";
 import {
@@ -48,7 +48,7 @@ function App() {
 <div className="container my-3">
         <Routes>
         <Route path="/" element={<TextForm heading="Enter the text to analyze" mode={mode} showAlert={showAlert}/>}/>
-        <Route path="/about" element={<About />} />
+        <Route path="/about" element={<About mode={mode} />} />
       </Routes>
 
 </div>
